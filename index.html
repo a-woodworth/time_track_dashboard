@@ -1,80 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    
+    <title>Frontend Mentor | Time tracking dashboard</title>
+  </head>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Time tracking dashboard</title>
+  <body>
+    <header>
+      <div class="user-profile">
+        <h1 class="user-profile__name">
+          <span>Report for</span> Jeremy Robson
+        </h1>
+        <a href="#">
+          <img class="user-profile__image" src="images/image-jeremy.png" alt="Jeremy Robson dashboard settings.">
+        </a>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__menu">
+          <li class="main-nav__menu-item">
+            <a class="main-nav__menu-item-link" href="#">
+              Daily
+            </a>
+          </li>
+          <li class="main-nav__menu-item active">
+            <a class="main-nav__menu-item-link" href="#">
+              Weekly
+            </a>
+          </li>
+          <li class="main-nav__menu-item">
+            <a class="main-nav__menu-item-link" href="#">
+              Monthly
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <main>
+      <div class="activity-cards">
+        <article class="card__work">
+          <div>
+            <h2 class="activity-card__heading">Work</h2>
+            <button class="btn" aria-label="Work Menu">
+              <img src="images/icon-ellipsis.svg" alt="" aria-hidden="true" focusable="false">
+            </button>
+          </div>
+          <h3 class="activity-card__current-time">32hrs</h2>
+          <p class="activity-card__previous-time">
+            <span class="timeframe">Last Week</span>
+            &nbsp;–&nbsp;
+            <span class="total-time">36hrs</span>
+          </p>
+        </article>
+      </div>
+    </main>
 
-  Report for
-  Jeremy Robson
+    Play
+    1hr <!-- daily -->
+    Previous - 2hrs <!-- daily -->
+    10hrs <!-- weekly -->
+    Previous - 8hrs <!-- weekly -->
+    23hrs <!-- monthly -->
+    Previous - 29hrs <!-- monthly -->
 
-  Daily
-  Weekly
-  Monthly
+    Study
+    0hrs <!-- daily -->
+    Previous - 1hr <!-- daily -->
+    4hrs <!-- weekly -->
+    Previous - 7hrs <!-- weekly -->
+    13hrs <!-- monthly -->
+    Previous - 19hrs <!-- monthly -->
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
+    Exercise
+    1hr <!-- daily -->
+    Previous - 1hr <!-- daily -->
+    4hrs <!-- weekly -->
+    Previous - 5hrs <!-- weekly -->
+    11hrs <!-- monthly -->
+    Previous - 18hrs <!-- monthly -->
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
+    Social
+    1hr <!-- daily -->
+    Previous - 3hrs <!-- daily -->
+    5hrs <!-- weekly -->
+    Previous - 10hrs <!-- weekly -->
+    21hrs <!-- monthly -->
+    Previous - 23hrs <!-- monthly -->
 
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
+    Self Care
+    0hrs <!-- daily -->
+    Previous - 1hr <!-- daily -->
+    2hrs <!-- weekly -->
+    Previous - 2hrs <!-- weekly -->
+    7hrs <!-- monthly -->
+    Previous - 11hrs <!-- monthly -->
 
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>
