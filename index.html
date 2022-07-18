@@ -14,98 +14,129 @@
 
   <body>
     <header>
-      <div class="user-profile">
-        <h1 class="user-profile__name">
-          <span>Report for</span> Jeremy Robson
-        </h1>
-        <a href="#">
-          <img class="user-profile__image" src="images/image-jeremy.png" alt="Jeremy Robson dashboard settings.">
-        </a>
+      <div class="main-header container">
+        <div class="user-profile">
+          <h1 class="user-profile__name">
+            <span>Report for</span> Jeremy Robson
+          </h1>
+          <a href="#">
+            <img class="user-profile__image" src="images/image-jeremy.png" 
+              alt="Jeremy Robson dashboard settings.">
+          </a>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__menu">
+            <li class="main-nav__menu-item">
+              <a class="main-nav__menu-item-link" href="#">
+                Daily
+              </a>
+            </li>
+            <li class="main-nav__menu-item active">
+              <a class="main-nav__menu-item-link" href="#">
+                Weekly
+              </a>
+            </li>
+            <li class="main-nav__menu-item">
+              <a class="main-nav__menu-item-link" href="#">
+                Monthly
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-nav">
-        <ul class="main-nav__menu">
-          <li class="main-nav__menu-item">
-            <a class="main-nav__menu-item-link" href="#">
-              Daily
-            </a>
-          </li>
-          <li class="main-nav__menu-item active">
-            <a class="main-nav__menu-item-link" href="#">
-              Weekly
-            </a>
-          </li>
-          <li class="main-nav__menu-item">
-            <a class="main-nav__menu-item-link" href="#">
-              Monthly
-            </a>
-          </li>
-        </ul>
-      </nav>
     </header>
-
-    <main>
+    <main class="container">
       <div class="activity-cards">
         <article class="card__work">
-          <div>
-            <h2 class="activity-card__heading">Work</h2>
+          <div class="activity-card__header">
+            <h2 class="activity-card__title">Work</h2>
             <button class="btn" aria-label="Work Menu">
-              <img src="images/icon-ellipsis.svg" alt="" aria-hidden="true" focusable="false">
+              <img src="images/icon-ellipsis.svg" alt="" aria-hidden="true">
             </button>
           </div>
-          <h3 class="activity-card__current-time">32hrs</h2>
+          <h3 class="activity-card__current-time">32hrs</h3>
           <p class="activity-card__previous-time">
             <span class="timeframe">Last Week</span>
             &nbsp;–&nbsp;
             <span class="total-time">36hrs</span>
           </p>
         </article>
+        <article class="card__play">
+          <div class="activity-card__header">
+            <h2 class="activity-card__title">Play</h2>
+            <button class="btn" aria-label="Play Menu">
+              <img src="images/icon-ellipsis.svg" alt="" aria-hidden="true">
+            </button>
+          </div>
+          <h3 class="activity-card__current-time">10hrs</h3>
+          <p class="activity-card__previous-time">
+            <span class="timeframe">Last Week</span>
+            &nbsp;–&nbsp;
+            <span class="total-time">8hrs</span>
+          </p>
+        </article>
+        <article class="card__study">
+          <div class="activity-card__header">
+            <h2 class="activity-card__title">Study</h2>
+            <button class="btn" aria-label="Study Menu">
+              <img src="images/icon-ellipsis.svg" alt="" aria-hidden="true">
+            </button>
+          </div>
+          <h3 class="activity-card__current-time">4hrs</h3>
+          <p class="activity-card__previous-time">
+            <span class="timeframe">Last Week</span>
+            &nbsp;–&nbsp;
+            <span class="total-time">7hrs</span>
+          </p>
+        </article>
+        <article class="card__exercise">
+          <div class="activity-card__header">
+            <h2 class="activity-card__title">Exercise</h2>
+            <button class="btn" aria-label="Exercise Menu">
+              <img src="images/icon-ellipsis.svg" alt="" aria-hidden="true">
+            </button>
+          </div>
+          <h3 class="activity-card__current-time">4hrs</h3>
+          <p class="activity-card__previous-time">
+            <span class="timeframe">Last Week</span>
+            &nbsp;–&nbsp;
+            <span class="total-time">5hrs</span>
+          </p>
+        </article>
+        <article class="card__exercise">
+          <div class="activity-card__header">
+            <h2 class="activity-card__title">Social</h2>
+            <button class="btn" aria-label="Social Menu">
+              <img src="images/icon-ellipsis.svg" alt="" aria-hidden="true">
+            </button>
+          </div>
+          <h3 class="activity-card__current-time">5hrs</h3>
+          <p class="activity-card__previous-time">
+            <span class="timeframe">Last Week</span>
+            &nbsp;–&nbsp;
+            <span class="total-time">10hrs</span>
+          </p>
+        </article>
+        <article class="card__exercise">
+          <div class="activity-card__header">
+            <h2 class="activity-card__title">Self Care</h2>
+            <button class="btn" aria-label="Self Care Menu">
+              <img src="images/icon-ellipsis.svg" alt="" aria-hidden="true">
+            </button>
+          </div>
+          <h3 class="activity-card__current-time">2hrs</h3>
+          <p class="activity-card__previous-time">
+            <span class="timeframe">Last Week</span>
+            &nbsp;–&nbsp;
+            <span class="total-time">2hrs</span>
+          </p>
+        </article>
       </div>
     </main>
-
-    Play
-    1hr <!-- daily -->
-    Previous - 2hrs <!-- daily -->
-    10hrs <!-- weekly -->
-    Previous - 8hrs <!-- weekly -->
-    23hrs <!-- monthly -->
-    Previous - 29hrs <!-- monthly -->
-
-    Study
-    0hrs <!-- daily -->
-    Previous - 1hr <!-- daily -->
-    4hrs <!-- weekly -->
-    Previous - 7hrs <!-- weekly -->
-    13hrs <!-- monthly -->
-    Previous - 19hrs <!-- monthly -->
-
-    Exercise
-    1hr <!-- daily -->
-    Previous - 1hr <!-- daily -->
-    4hrs <!-- weekly -->
-    Previous - 5hrs <!-- weekly -->
-    11hrs <!-- monthly -->
-    Previous - 18hrs <!-- monthly -->
-
-    Social
-    1hr <!-- daily -->
-    Previous - 3hrs <!-- daily -->
-    5hrs <!-- weekly -->
-    Previous - 10hrs <!-- weekly -->
-    21hrs <!-- monthly -->
-    Previous - 23hrs <!-- monthly -->
-
-    Self Care
-    0hrs <!-- daily -->
-    Previous - 1hr <!-- daily -->
-    2hrs <!-- weekly -->
-    Previous - 2hrs <!-- weekly -->
-    7hrs <!-- monthly -->
-    Previous - 11hrs <!-- monthly -->
-
-    
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </div>
+    <footer>
+      <div class="main-footer container">
+        <p class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/a-woodworth" target="_blank">a-woodworth</a>.</p>
+      </div>
+    </footer>
   </body>
 </html>
