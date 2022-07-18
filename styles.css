@@ -1,0 +1,120 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  background-color: hsl(226, 43%, 10%);
+  font-family: "Rubik", sans-serif;
+  line-height: 1.185;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  color: hsl(0, 0%, 100%);
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+p {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  color: hsl(236, 100%, 87%);
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+a:focus {
+  outline: auto 2px Highlight;
+  outline: auto 5px -webkit-focus-ring-color;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  padding-inline: 1.5rem;
+}
+
+.main-header,
+.user-profile {
+  border-radius: 15px;
+}
+
+.main-header {
+  background-color: hsl(235, 46%, 20%);
+  margin: 5rem auto 1.5rem;
+  width: 100%;
+  max-width: 20.4375rem;
+}
+
+.user-profile {
+  background-color: hsl(246, 80%, 60%);
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2.125rem 0 2.125rem 2.125rem;
+}
+
+.user-profile__name span:first-child {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  color: hsl(236, 100%, 87%);
+}
+.user-profile__name span:last-child {
+  display: block;
+  max-width: 14ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.user-profile__image {
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  background: hsl(0, 0%, 85%);
+  border: 3px solid hsl(0, 0%, 100%);
+  margin-right: 1.25rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

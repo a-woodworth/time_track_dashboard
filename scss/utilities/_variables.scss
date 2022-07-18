@@ -1,0 +1,53 @@
+// ___________________________________________________________________
+// Global Config
+// ___________________________________________________________________
+
+@use '../utilities/mixins' as *;
+
+//Font Stack
+$font-family--primary: 'Rubik', sans-serif;
+
+// Font Weights
+$font-weight--bold: 500;
+$font-weight--regular: 400;
+$font-weight--light: 300;
+
+// Primary Colors
+$blue: #{'hsl(246, 80%, 60%)'};
+$dark-blue: #{'hsl(235, 46%, 20%)'};
+$dark-blue-hover: #{'hsl(235, 41%, 34%)'};
+$desaturated-blue: #{'hsl(235, 45%, 61%)'};
+$pale-blue: #{'hsl(236, 100%, 87%)'};
+$very-dark-blue: #{'hsl(226, 43%, 10%)'};
+$white: #{'hsl(0, 0%, 100%)'};
+
+// Card Colors
+$light-red: #{'hsl(15, 100%, 70%)'}; // work
+$soft-blue: #{'hsl(195, 74%, 62%)'}; // play
+$red: #{'hsl(348, 100%, 68%)'}; // study
+$lime-green: #{'hsl(145, 58%, 55%)'}; // exercise
+$violet: #{'hsl(264, 64%, 52%)'}; // social
+$soft-orange: #{'hsl(43, 84%, 65%)'};  // self care
+
+// Color Usage
+$bg-color-primary: $very-dark-blue;
+$bg-color-secondary: $blue;
+$bg-color-card: $dark-blue;
+$bg-color-profile-img: #{'hsl(0, 0%, 85%)'};
+$bg-card-hover: $dark-blue-hover;
+$text-color-primary: $white;
+$text-color-secondary: $pale-blue;
+$text-color-tertiary: $desaturated-blue;
+
+// Text
+$text-jumbo: pxToRem(56px);
+$text-XL: pxToRem(40px);
+$text-L: pxToRem(32px);
+$text-M: pxToRem(24px);
+$text-S: pxToRem(18px);
+$text-XS: pxToRem(15px);
+
+// Line Height
+$line-height__default: 1.185;
+
+// Breakpoints

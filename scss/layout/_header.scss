@@ -1,0 +1,51 @@
+// ___________________________________________________________________
+// Header Styles
+// ___________________________________________________________________
+
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.main-header,
+.user-profile {
+  @include rounded(15px);
+}
+
+.main-header {
+  background-color: $bg-color-card;
+  margin: 5rem auto 1.5rem;
+  width: 100%;
+  max-width: 20.4375rem;
+}
+
+.user-profile {
+  background-color: $bg-color-secondary;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2.125rem 0 2.125rem 2.125rem;
+}
+
+.user-profile__name {
+  span:first-child {
+    @include text($text-XS, $font-weight--regular, $text-color-secondary);
+  }
+
+  span:last-child {
+    // Handle long name
+    display: block;
+    max-width: 14ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.user-profile__image {
+  @include rounded(50%);
+  @include size(4rem);
+  background: $bg-color-profile-img;
+  border: 3px solid $text-color-primary;
+  margin-right: 1.25rem;
+}
