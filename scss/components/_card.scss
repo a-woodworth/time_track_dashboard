@@ -4,3 +4,71 @@
   
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
+
+.activity-cards {
+  margin: auto;
+  max-width: 20.4375rem;
+  width: 100%;
+}
+
+.activity-cards article {
+  @include rounded(15px);
+  margin-bottom: 1.5rem;
+  padding-top: 2.375rem;
+}
+
+.activity-card__content {
+  @include rounded(15px);
+  background-color: $bg-color-card;
+  padding: 1.75rem 1.5rem;
+
+  &:hover {
+    background-color: $bg-card-hover;
+    cursor: pointer;
+  }
+}
+
+.card__work,
+.card__play,
+.card__study,
+.card__exercise,
+.card__social,
+.card__selfcare {
+  background-repeat: no-repeat;
+}
+
+.card__work {
+  background-color: $light-red;
+  background-image: url('images/icon-work.svg');
+  background-position: right 1.0625rem top -0.625rem;
+}
+
+.card__play {
+  background-color: $soft-blue;
+  background-image: url('images/icon-play.svg');
+  background-position: right 1.0625rem top -0.275rem;
+}
+
+.card__study {
+  background-color: $red;
+  background-image: url('images/icon-study.svg');
+  background-position: right 1.0625rem top -0.375rem;
+}
+
+.card__exercise {
+  background-color: $lime-green;
+  background-image: url('images/icon-exercise.svg');
+  background-position: right 1.0625rem top -0.05rem;
+}
+
+.card__social {
+  background-color: $violet;
+  background-image: url('images/icon-social.svg');
+  background-position: right 1.0625rem top -0.9375rem;
+}
+
+.card__selfcare {
+  background-color: $soft-orange;
+  background-image: url('images/icon-self-care.svg');
+  background-position: right 1.0625rem top -0.675rem;
+}

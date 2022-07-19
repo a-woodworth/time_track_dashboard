@@ -4,3 +4,24 @@
   
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
+
+.btn {
+  background-color: inherit;
+  border: none;
+  color: $text-color-secondary;
+  cursor: pointer;
+
+  &:hover {
+    color: $text-color-primary;
+  }
+}
+
+.btn-icon {
+  height: 5px;
+  width: 21px;
+}
+
+// Hide inline svg for btn-icon 
+.hidden {
+  display: none;
+}

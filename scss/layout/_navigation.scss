@@ -17,9 +17,10 @@
 }
 
 .main-nav__menu-item-link {
-  @include text($text-S, $font-weight--regular, $desaturated-blue);
+  @include text($text-S, $font-weight--regular, $text-color-tertiary);
 
-  &.active {
-    color: $white;
+  &.active,
+  &:hover {
+    color: $text-color-primary;
   }
 }

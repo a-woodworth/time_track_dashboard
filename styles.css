@@ -66,6 +66,92 @@ a:focus {
   outline: auto 5px -webkit-focus-ring-color;
 }
 
+.btn {
+  background-color: inherit;
+  border: none;
+  color: hsl(236, 100%, 93%);
+  cursor: pointer;
+}
+.btn:hover {
+  color: hsl(0, 0%, 100%);
+}
+
+.btn-icon {
+  height: 5px;
+  width: 21px;
+}
+
+.hidden {
+  display: none;
+}
+
+.activity-cards {
+  margin: auto;
+  max-width: 20.4375rem;
+  width: 100%;
+}
+
+.activity-cards article {
+  border-radius: 15px;
+  margin-bottom: 1.5rem;
+  padding-top: 2.375rem;
+}
+
+.activity-card__content {
+  border-radius: 15px;
+  background-color: hsl(235, 46%, 20%);
+  padding: 1.75rem 1.5rem;
+}
+.activity-card__content:hover {
+  background-color: hsl(235, 41%, 34%);
+  cursor: pointer;
+}
+
+.card__work,
+.card__play,
+.card__study,
+.card__exercise,
+.card__social,
+.card__selfcare {
+  background-repeat: no-repeat;
+}
+
+.card__work {
+  background-color: hsl(15, 100%, 70%);
+  background-image: url("images/icon-work.svg");
+  background-position: right 1.0625rem top -0.625rem;
+}
+
+.card__play {
+  background-color: hsl(195, 74%, 62%);
+  background-image: url("images/icon-play.svg");
+  background-position: right 1.0625rem top -0.275rem;
+}
+
+.card__study {
+  background-color: hsl(348, 100%, 68%);
+  background-image: url("images/icon-study.svg");
+  background-position: right 1.0625rem top -0.375rem;
+}
+
+.card__exercise {
+  background-color: hsl(145, 58%, 55%);
+  background-image: url("images/icon-exercise.svg");
+  background-position: right 1.0625rem top -0.05rem;
+}
+
+.card__social {
+  background-color: hsl(264, 64%, 52%);
+  background-image: url("images/icon-social.svg");
+  background-position: right 1.0625rem top -0.9375rem;
+}
+
+.card__selfcare {
+  background-color: hsl(43, 84%, 65%);
+  background-image: url("images/icon-self-care.svg");
+  background-position: right 1.0625rem top -0.675rem;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr;
@@ -133,7 +219,7 @@ a:focus {
   font-weight: 400;
   color: hsl(235, 25%, 61%);
 }
-.main-nav__menu-item-link.active {
+.main-nav__menu-item-link.active, .main-nav__menu-item-link:hover {
   color: hsl(0, 0%, 100%);
 }
 
