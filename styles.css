@@ -54,7 +54,7 @@ h3 {
 p {
   font-size: 0.9375rem;
   font-weight: 400;
-  color: hsl(236, 100%, 87%);
+  color: hsl(236, 100%, 93%);
 }
 
 a {
@@ -98,7 +98,7 @@ a:focus {
 .user-profile__name span:first-child {
   font-size: 0.9375rem;
   font-weight: 400;
-  color: hsl(236, 100%, 87%);
+  color: hsl(236, 100%, 93%);
 }
 .user-profile__name span:last-child {
   display: block;
@@ -115,6 +115,26 @@ a:focus {
   background: hsl(0, 0%, 85%);
   border: 3px solid hsl(0, 0%, 100%);
   margin-right: 1.25rem;
+}
+
+.main-nav__menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.main-nav__menu-item {
+  display: inline-block;
+}
+
+.main-nav__menu-item-link {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: hsl(235, 25%, 61%);
+}
+.main-nav__menu-item-link.active {
+  color: hsl(0, 0%, 100%);
 }
 
 /*# sourceMappingURL=styles.css.map */

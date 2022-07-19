@@ -16,10 +16,12 @@ $font-weight--light: 300;
 $blue: #{'hsl(246, 80%, 60%)'};
 $dark-blue: #{'hsl(235, 46%, 20%)'};
 $dark-blue-hover: #{'hsl(235, 41%, 34%)'};
-$desaturated-blue: #{'hsl(235, 45%, 61%)'};
-$pale-blue: #{'hsl(236, 100%, 87%)'};
 $very-dark-blue: #{'hsl(226, 43%, 10%)'};
 $white: #{'hsl(0, 0%, 100%)'};
+
+// Changed colors from design spec to pass Accessibility Color Contrast Ratio
+$desaturated-blue: #{'hsl(235, 25%, 61%)'};
+$pale-blue: #{'hsl(236, 100%, 93%)'};
 
 // Card Colors
 $light-red: #{'hsl(15, 100%, 70%)'}; // work

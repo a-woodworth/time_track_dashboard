@@ -4,3 +4,22 @@
 
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
+
+.main-nav__menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.main-nav__menu-item {
+  display: inline-block;
+}
+
+.main-nav__menu-item-link {
+  @include text($text-S, $font-weight--regular, $desaturated-blue);
+
+  &.active {
+    color: $white;
+  }
+}
