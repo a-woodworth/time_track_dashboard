@@ -6,15 +6,15 @@
 @use '../utilities/mixins' as *;
 
 .activity-cards {
-  margin: auto;
+  margin: 0 auto 3.5rem auto;
   max-width: 20.4375rem;
   width: 100%;
-}
 
-.activity-cards article {
-  @include rounded(15px);
-  margin-bottom: 1.5rem;
-  padding-top: 2.375rem;
+  article {
+    @include rounded(15px);
+    margin-bottom: 1.5rem;
+    padding-top: 2.375rem;
+  }
 }
 
 .activity-card__content {
@@ -26,6 +26,18 @@
     background-color: $bg-card-hover;
     cursor: pointer;
   }
+}
+
+.activity-card__header,
+.activity-card__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.activity-card__header {
+  margin-bottom: 7px;
 }
 
 .card__work,

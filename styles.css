@@ -86,11 +86,10 @@ a:focus {
 }
 
 .activity-cards {
-  margin: auto;
+  margin: 0 auto 3.5rem auto;
   max-width: 20.4375rem;
   width: 100%;
 }
-
 .activity-cards article {
   border-radius: 15px;
   margin-bottom: 1.5rem;
@@ -105,6 +104,18 @@ a:focus {
 .activity-card__content:hover {
   background-color: hsl(235, 41%, 34%);
   cursor: pointer;
+}
+
+.activity-card__header,
+.activity-card__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.activity-card__header {
+  margin-bottom: 7px;
 }
 
 .card__work,
@@ -221,6 +232,21 @@ a:focus {
 }
 .main-nav__menu-item-link.active, .main-nav__menu-item-link:hover {
   color: hsl(0, 0%, 100%);
+}
+
+.attribution {
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: hsl(0, 0%, 100%);
+  padding: 0.5rem 0;
+  text-align: center;
+  width: 100%;
+}
+.attribution a {
+  color: hsl(0, 0%, 100%);
+}
+.attribution a:hover {
+  color: hsl(145, 58%, 55%);
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -4,3 +4,18 @@
 
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
+
+.attribution {
+  @include text(.75rem, $font-weight--light, $text-color-primary);
+  padding: 0.5rem 0;
+  text-align: center;
+  width: 100%;
+
+  a {
+    color: $text-color-primary;
+
+    &:hover {
+      color: $lime-green;
+    }
+  }
+}
