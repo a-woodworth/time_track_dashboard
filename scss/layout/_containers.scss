@@ -9,5 +9,11 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
+  column-gap: 24px;
+  justify-content: center;
   padding-inline: 1.5rem;
+
+  @media #{$brkpoint-md} {
+    grid-template-columns: repeat(4, minmax(255px, 1fr));
+  }
 }

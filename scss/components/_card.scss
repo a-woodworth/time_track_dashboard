@@ -14,6 +14,19 @@
     @include rounded(15px);
     margin-bottom: 1.5rem;
     padding-top: 2.375rem;
+
+    @media #{$brkpoint-md} {
+      margin-bottom: 0;
+      padding-top: 2.8125rem;
+    }
+  }
+
+  @media #{$brkpoint-md} {
+    max-width: 15.9375rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(255px, 1fr));
+    grid-template-rows: auto;
+    gap: 24px;
   }
 }
 
@@ -26,6 +39,10 @@
     background-color: $bg-card-hover;
     cursor: pointer;
   }
+
+  @media #{$brkpoint-md} {
+    padding: 1.8125rem 1.875rem 2rem 1.875rem;
+  }
 }
 
 .activity-card__header,
@@ -37,7 +54,24 @@
 }
 
 .activity-card__header {
-  margin-bottom: 7px;
+  margin-bottom: 0.4375rem;
+
+  @media #{$brkpoint-md} {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.activity-card__body {
+  @media #{$brkpoint-md} {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+.activity-card__current-time {
+  @media #{$brkpoint-md} {
+    margin-bottom: 0.5rem;
+  }
 }
 
 .card__work,

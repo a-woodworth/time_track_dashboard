@@ -15,6 +15,10 @@
   margin: 5rem auto 1.5rem;
   width: 100%;
   max-width: 20.4375rem;
+
+  @media #{$brkpoint-md} {
+    max-width: 15.9375rem;
+  }
 }
 
 .user-profile {
@@ -25,6 +29,12 @@
   justify-content: flex-end;
   align-items: center;
   padding: 2.125rem 0 2.125rem 2.125rem;
+
+  @media #{$brkpoint-md} {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    padding: 2.375rem 0 5rem 2rem;
+  }
 }
 
 .user-profile__name {
@@ -39,6 +49,11 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+
+    @media #{$brkpoint-md} {
+      max-width: 9ch;
+      white-space: normal;
+    }
   }
 }
 
@@ -48,4 +63,8 @@
   background: $bg-color-profile-img;
   border: 3px solid $text-color-primary;
   margin-right: 1.25rem;
+
+  @media #{$brkpoint-md} {
+    margin-bottom: 2rem;
+  }
 }

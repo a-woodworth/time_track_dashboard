@@ -46,6 +46,10 @@ h3 {
 
 h1 {
   @include text($text-M, $font-weight--light);
+
+  @media #{$brkpoint-md} {
+    font-size: $text-XL;
+  }
 }
 
 h2 {
@@ -54,6 +58,10 @@ h2 {
 
 h3 {
   @include text($text-L, $font-weight--light);
+
+  @media #{$brkpoint-md} {
+    font-size: $text-jumbo;
+  }
 }
 
 p {

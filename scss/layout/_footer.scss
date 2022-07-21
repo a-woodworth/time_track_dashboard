@@ -5,6 +5,13 @@
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
 
+footer {
+  @media #{$brkpoint-md} {
+    grid-row: 2;
+    grid-column: 1 / -1;
+  }
+}
+
 .attribution {
   @include text(.75rem, $font-weight--light, $text-color-primary);
   padding: 0.5rem 0;

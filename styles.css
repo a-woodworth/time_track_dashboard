@@ -40,6 +40,11 @@ h1 {
   font-size: 1.5rem;
   font-weight: 300;
 }
+@media (min-width: 69.375rem) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
 
 h2 {
   font-size: 1.125rem;
@@ -49,6 +54,11 @@ h2 {
 h3 {
   font-size: 2rem;
   font-weight: 300;
+}
+@media (min-width: 69.375rem) {
+  h3 {
+    font-size: 3.5rem;
+  }
 }
 
 p {
@@ -95,6 +105,21 @@ a:focus {
   margin-bottom: 1.5rem;
   padding-top: 2.375rem;
 }
+@media (min-width: 69.375rem) {
+  .activity-cards article {
+    margin-bottom: 0;
+    padding-top: 2.8125rem;
+  }
+}
+@media (min-width: 69.375rem) {
+  .activity-cards {
+    max-width: 15.9375rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(255px, 1fr));
+    grid-template-rows: auto;
+    gap: 24px;
+  }
+}
 
 .activity-card__content {
   border-radius: 15px;
@@ -104,6 +129,11 @@ a:focus {
 .activity-card__content:hover {
   background-color: hsl(235, 41%, 34%);
   cursor: pointer;
+}
+@media (min-width: 69.375rem) {
+  .activity-card__content {
+    padding: 1.8125rem 1.875rem 2rem 1.875rem;
+  }
 }
 
 .activity-card__header,
@@ -115,7 +145,25 @@ a:focus {
 }
 
 .activity-card__header {
-  margin-bottom: 7px;
+  margin-bottom: 0.4375rem;
+}
+@media (min-width: 69.375rem) {
+  .activity-card__header {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (min-width: 69.375rem) {
+  .activity-card__body {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 69.375rem) {
+  .activity-card__current-time {
+    margin-bottom: 0.5rem;
+  }
 }
 
 .card__work,
@@ -167,7 +215,14 @@ a:focus {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
+  column-gap: 24px;
+  justify-content: center;
   padding-inline: 1.5rem;
+}
+@media (min-width: 69.375rem) {
+  .container {
+    grid-template-columns: repeat(4, minmax(255px, 1fr));
+  }
 }
 
 .main-header,
@@ -181,6 +236,11 @@ a:focus {
   width: 100%;
   max-width: 20.4375rem;
 }
+@media (min-width: 69.375rem) {
+  .main-header {
+    max-width: 15.9375rem;
+  }
+}
 
 .user-profile {
   background-color: hsl(246, 80%, 60%);
@@ -190,6 +250,13 @@ a:focus {
   justify-content: flex-end;
   align-items: center;
   padding: 2.125rem 0 2.125rem 2.125rem;
+}
+@media (min-width: 69.375rem) {
+  .user-profile {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    padding: 2.375rem 0 5rem 2rem;
+  }
 }
 
 .user-profile__name span:first-child {
@@ -204,6 +271,12 @@ a:focus {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+@media (min-width: 69.375rem) {
+  .user-profile__name span:last-child {
+    max-width: 9ch;
+    white-space: normal;
+  }
+}
 
 .user-profile__image {
   border-radius: 50%;
@@ -213,6 +286,11 @@ a:focus {
   border: 3px solid hsl(0, 0%, 100%);
   margin-right: 1.25rem;
 }
+@media (min-width: 69.375rem) {
+  .user-profile__image {
+    margin-bottom: 2rem;
+  }
+}
 
 .main-nav__menu {
   display: flex;
@@ -220,9 +298,24 @@ a:focus {
   align-items: center;
   padding: 1.5rem 0;
 }
+@media (min-width: 69.375rem) {
+  .main-nav__menu {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1.625rem 2.125rem;
+  }
+}
 
 .main-nav__menu-item {
   display: inline-block;
+}
+@media (min-width: 69.375rem) {
+  .main-nav__menu-item {
+    margin-bottom: 1.3125rem;
+  }
+  .main-nav__menu-item:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .main-nav__menu-item-link {
@@ -232,6 +325,13 @@ a:focus {
 }
 .main-nav__menu-item-link.active, .main-nav__menu-item-link:hover {
   color: hsl(0, 0%, 100%);
+}
+
+@media (min-width: 69.375rem) {
+  footer {
+    grid-row: 2;
+    grid-column: 1/-1;
+  }
 }
 
 .attribution {

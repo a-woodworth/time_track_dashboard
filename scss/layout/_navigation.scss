@@ -10,10 +10,24 @@
   justify-content: space-around;
   align-items: center;
   padding: 1.5rem 0;
+
+  @media #{$brkpoint-md} {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1.625rem 2.125rem;
+  }
 }
 
 .main-nav__menu-item {
   display: inline-block;
+
+  @media #{$brkpoint-md} {
+    margin-bottom: 1.3125rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .main-nav__menu-item-link {
