@@ -5,6 +5,13 @@
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
 
+header {
+  @media #{$brkpoint-md} {
+    grid-column: 1;
+    grid-row-start: span 2;
+  }
+}
+
 .main-header,
 .user-profile {
   @include rounded(15px);
@@ -17,6 +24,7 @@
   max-width: 20.4375rem;
 
   @media #{$brkpoint-md} {
+    margin: 0;
     max-width: 15.9375rem;
   }
 }
@@ -65,6 +73,6 @@
   margin-right: 1.25rem;
 
   @media #{$brkpoint-md} {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 }

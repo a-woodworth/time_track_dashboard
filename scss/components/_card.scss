@@ -22,11 +22,12 @@
   }
 
   @media #{$brkpoint-md} {
+    margin: 0;
     max-width: 15.9375rem;
     display: grid;
-    grid-template-columns: repeat(3, minmax(255px, 1fr));
+    grid-template-columns: repeat(3, minmax(15.9375rem, 1fr));
     grid-template-rows: auto;
-    gap: 24px;
+    gap: 1.5rem;
   }
 }
 

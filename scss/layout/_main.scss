@@ -4,3 +4,10 @@
 
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
+
+main {
+  @media #{$brkpoint-md} {
+    grid-column: 2 / -1;
+    grid-row: span 2;
+  }
+}

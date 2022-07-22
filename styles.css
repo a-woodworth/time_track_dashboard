@@ -113,11 +113,12 @@ a:focus {
 }
 @media (min-width: 69.375rem) {
   .activity-cards {
+    margin: 0;
     max-width: 15.9375rem;
     display: grid;
-    grid-template-columns: repeat(3, minmax(255px, 1fr));
+    grid-template-columns: repeat(3, minmax(15.9375rem, 1fr));
     grid-template-rows: auto;
-    gap: 24px;
+    gap: 1.5rem;
   }
 }
 
@@ -215,13 +216,23 @@ a:focus {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  column-gap: 24px;
+  column-gap: 1.5rem;
   justify-content: center;
+  align-items: center;
   padding-inline: 1.5rem;
+  max-width: 69.375rem;
+  margin: auto;
 }
 @media (min-width: 69.375rem) {
   .container {
-    grid-template-columns: repeat(4, minmax(255px, 1fr));
+    grid-template-columns: repeat(4, minmax(15.9375rem, 1fr));
+  }
+}
+
+@media (min-width: 69.375rem) {
+  header {
+    grid-column: 1;
+    grid-row-start: span 2;
   }
 }
 
@@ -238,6 +249,7 @@ a:focus {
 }
 @media (min-width: 69.375rem) {
   .main-header {
+    margin: 0;
     max-width: 15.9375rem;
   }
 }
@@ -288,7 +300,7 @@ a:focus {
 }
 @media (min-width: 69.375rem) {
   .user-profile__image {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -328,9 +340,16 @@ a:focus {
 }
 
 @media (min-width: 69.375rem) {
+  main {
+    grid-column: 2/-1;
+    grid-row: span 2;
+  }
+}
+
+@media (min-width: 69.375rem) {
   footer {
-    grid-row: 2;
     grid-column: 1/-1;
+    grid-row: 3;
   }
 }
 

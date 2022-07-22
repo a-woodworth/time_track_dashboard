@@ -9,11 +9,14 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  column-gap: 24px;
+  column-gap: 1.5rem;
   justify-content: center;
+  align-items: center;
   padding-inline: 1.5rem;
+  max-width: 69.375rem;
+  margin: auto;
 
   @media #{$brkpoint-md} {
-    grid-template-columns: repeat(4, minmax(255px, 1fr));
+    grid-template-columns: repeat(4, minmax(15.9375rem, 1fr));
   }
 }
